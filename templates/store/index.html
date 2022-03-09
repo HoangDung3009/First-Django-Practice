@@ -43,7 +43,7 @@
                                             <div class="col-lg-3 col-sm-6 pt-6 pt-lg-0">
                                             <div class="product-item">
                                                 <div class="product-img img-zoom-effect">
-                                                    <a href="single-product.html">
+                                                    <a href="{% url 'details' product.id %}">
                                                         <img class="img-full" style="width:270px; height: 300px;" src="{{ product.product_thumb.url }}" alt="Product Images">
                                                     </a>
                                                     <div class="product-add-action">
@@ -138,24 +138,24 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="pagination-area pt-10">
-                                <nav aria-label="Page navigation example">
-                                    <ul class="pagination justify-content-center">
-                                        <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Previous">
-                                                <span class="fa fa-chevron-left"></span>
-                                            </a>
-                                        </li>
-                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Next">
-                                                <span class="fa fa-chevron-right"></span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
+{#                            <div class="pagination-area pt-10">#}
+{#                                <nav aria-label="Page navigation example">#}
+{#                                    <ul class="pagination justify-content-center">#}
+{#                                        <li class="page-item">#}
+{#                                            <a class="page-link" href="#" aria-label="Previous">#}
+{#                                                <span class="fa fa-chevron-left"></span>#}
+{#                                            </a>#}
+{#                                        </li>#}
+{#                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>#}
+{#                                        <li class="page-item"><a class="page-link" href="#">2</a></li>#}
+{#                                        <li class="page-item">#}
+{#                                            <a class="page-link" href="#" aria-label="Next">#}
+{#                                                <span class="fa fa-chevron-right"></span>#}
+{#                                            </a>#}
+{#                                        </li>#}
+{#                                    </ul>#}
+{#                                </nav>#}
+{#                            </div>#}
                         </div>
                     </div>
                 </div>
